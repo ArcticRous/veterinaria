@@ -11,11 +11,11 @@ const { fileUpload, retornaImagen } = require('../controllers/uploads');
 
 const router = Router();
 
-router.use(expressFileUpload());
+router.use( expressFileUpload() );
 
-router.put('/:tipo/:id', validarJWT, fileUpload);
+router.put('/:tipo/:id', validarJWT , fileUpload );
 
-router.get('/:tipo/:foto', retornaImagen);
+router.get('/:tipo/:foto', retornaImagen );
 
 
 
